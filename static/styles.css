@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     margin: 0;
     padding: 0;
@@ -13,7 +12,7 @@ body {
 }
 
 .container {
-    max-width: 90vw; /* Set max width to 90% of the viewport */
+    max-width: 90vw;
     padding: 20px;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 15px;
@@ -21,20 +20,18 @@ body {
     animation: fadeIn 0.5s;
 }
 
-/* Responsive adjustments */
 @media (min-width: 768px) {
     .container {
-        max-width: 50vw; /* Larger screens use up to 50% of the viewport */
+        max-width: 50vw;
     }
 }
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 30vw; /* Extra large screens */
+        max-width: 30vw;
     }
 }
 
-/* Typography */
 h1 {
     margin-bottom: 20px;
     color: darkslateblue;
@@ -59,7 +56,7 @@ label {
 }
 
 #total-el {
-    width: 80%; /* Adjust to screen width */
+    width: 80%;
     max-width: 200px;
     padding: 10px;
     font-size: 1rem;
@@ -75,7 +72,7 @@ button {
     font-weight: bold;
     transition: background-color 0.3s ease;
     cursor: pointer;
-    width: 80%; /* Make buttons take full width */
+    width: 80%;
     max-width: 220px;
 }
 
@@ -114,6 +111,7 @@ button {
     font-size: 1rem;
 }
 
+/* Fade-in animation */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
