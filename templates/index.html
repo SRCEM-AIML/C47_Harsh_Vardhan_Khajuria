@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance Counter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <main class="container">
+        <h1>Student Attendance Counter</h1>
+        <section class="input-group">
+            <label for="total-el">Number of Students in Class:</label>
+            <input id="total-el" type="number" min="1" placeholder="Enter total students" aria-label="Total Students">
+        </section>
+        <button id="enter-btn" onclick="storeTotal()">Enter</button>
+
+        <h2 id="count-el" aria-live="polite">Roll Number: 1</h2>
+        <button id="increment-btn" onclick="Present()">Present</button>
+        <button id="display-btn" onclick="Absent()">Absent</button>
+        <p id="display-el">Absent Roll Numbers: </p>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
